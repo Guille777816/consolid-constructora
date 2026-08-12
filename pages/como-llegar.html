@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Llegar | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .contact-info-card { background: var(--light); border-radius: var(--radius-lg); padding: 40px; }
+        .contact-info-card h3 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 24px; }
+        .contact-item { display: flex; gap: 16px; margin-bottom: 20px; }
+        .contact-item i { width: 44px; height: 44px; background: var(--primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-item strong { display: block; margin-bottom: 2px; }
+        .contact-item p, .contact-item a { color: var(--gray-1); font-size: 0.95rem; }
+        .hours-table { width: 100%; margin-top: 20px; }
+        .hours-table td { padding: 8px 0; border-bottom: 1px solid var(--gray-4); font-size: 0.95rem; }
+        .hours-table td:first-child { font-weight: 600; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="galeria.html">Galería</a></li><li><a href="sistema-constructivo.html">Sistema</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown active"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <span>Contacto</span></div><h1>Contacto y Ubicación</h1><p>Visitanos en nuestra oficina o escribinos por WhatsApp</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <div class="contact-info-card">
+                    <h3>Datos de contacto</h3>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Dirección</strong><p>Av. Rafael Obligado 1234, Puerto Madero, Buenos Aires, Argentina</p></div></div>
+                    <div class="contact-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp Comercial</strong><a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></div></div>
+                    <div class="contact-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp Recepción</strong><a href="https://wa.me/5491140401887">(+54) 9 11 4040-1887</a></div></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Teléfonos</strong><p>(+54) 11-5263-2506<br>0810-220-2272</p></div></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></div></div>
+                </div>
+
+                <div class="contact-info-card" style="margin-top:24px;">
+                    <h3>Horarios de atención</h3>
+                    <table class="hours-table">
+                        <tr><td>Lunes a Viernes</td><td>08:00 a 13:00 y 14:00 a 17:00 hs</td></tr>
+                        <tr><td>Sábados</td><td>09:00 a 13:00 hs</td></tr>
+                        <tr><td>Domingos y feriados</td><td>Cerrado</td></tr>
+                    </table>
+                    <p style="margin-top:16px; font-size:0.85rem; color:var(--gray-2); font-style:italic;">SOLICITÁ ENTREVISTA PREVIA ANTES DE ACERCARTE A LA OFICINA</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0!2d-58.36!3d-34.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzM2LjAiUyA1OMKwMjEnMzYuMCJX!5e0!3m2!1ses!2sar!4v1" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div style="margin-top:24px; background:var(--light); padding:32px; border-radius:var(--radius-lg); text-align:center;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.3rem; margin-bottom:12px;">¿Cómo llegar?</h3>
+                    <p style="color:var(--gray-1); margin-bottom:16px;">Nuestra oficina se encuentra en Puerto Madero, con fácil acceso en auto, transporte público o taxi.</p>
+                    <a href="https://maps.google.com/?q=Puerto+Madero+Buenos+Aires" target="_blank" class="btn btn-primary"><i class="fas fa-directions"></i> Cómo llegar en Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>

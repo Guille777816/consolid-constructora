@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Obras | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .gallery-filters { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+        .filter-btn { padding: 10px 24px; border: 2px solid var(--gray-4); background: var(--white); border-radius: 30px; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: var(--transition); color: var(--gray-1); }
+        .filter-btn:hover, .filter-btn.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
+        .gallery-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .gallery-item { aspect-ratio: 4/3; }
+        @media (max-width: 768px) { .gallery-grid-2 { grid-template-columns: 1fr 1fr; gap: 8px; } }
+        @media (max-width: 480px) { .gallery-grid-2 { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown active"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="sistema-constructivo.html">Sistema</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <span>Galería de Obras</span></div><h1>Galería de Obras</h1><p>Recorré nuestras casas terminadas y descubrí la calidad de nuestro trabajo</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="gallery-filters">
+            <button class="filter-btn active">Todas</button>
+            <button class="filter-btn">Exteriores</button>
+            <button class="filter-btn">Interiores</button>
+            <button class="filter-btn">Cocinas</button>
+            <button class="filter-btn">Baños</button>
+            <button class="filter-btn">Dormitorios</button>
+            <button class="filter-btn">Terminaciones</button>
+        </div>
+
+        <div class="gallery-grid-2">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Fachada moderna"><div class="gallery-item-overlay"><span>Residencia Martínez — Nordelta</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Casa familiar"><div class="gallery-item-overlay"><span>Residencia González — Tigre</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Interior moderno"><div class="gallery-item-overlay"><span>Interior — Residencia Fernández</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Casa de diseño"><div class="gallery-item-overlay"><span>Residencia López — San Isidro</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Piscina"><div class="gallery-item-overlay"><span>Piscina — Residencia Casona</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Construcción en proceso"><div class="gallery-item-overlay"><span>Obra en proceso — Steel Frame</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80" alt="Cocina moderna"><div class="gallery-item-overlay"><span>Cocina — Residencia Premium</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Dormitorio"><div class="gallery-item-overlay"><span>Suite — Residencia Family Plus</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="Living"><div class="gallery-item-overlay"><span>Living — Residencia Comfort</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80" alt="Baño"><div class="gallery-item-overlay"><span>Baño — Residencia Essential</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80" alt="Fachada nocturna"><div class="gallery-item-overlay"><span>Fachada nocturna — Residencia Loft</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Casa amplia"><div class="gallery-item-overlay"><span>Residencia Casona — Vista frontal</span></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section"><div class="container"><div class="cta-content"><h2>¿Te gustó lo que viste?</h2><p>Contactanos y empezamos a diseñar tu casa hoy mismo.</p><a href="presupuesto.html" class="btn btn-primary btn-lg">Quiero mi Presupuesto</a></div></div></section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>

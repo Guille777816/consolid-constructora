@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorridos Virtuales 360° | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .tours-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 24px; }
+        .tour-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .tour-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .tour-card-embed { position: relative; padding-top: 56.25%; background: var(--dark); }
+        .tour-card-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .tour-card-embed .tour-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80') center/cover; color: white; cursor: pointer; transition: var(--transition); }
+        .tour-card-embed .tour-placeholder:hover { background: linear-gradient(135deg, rgba(200,132,42,0.8), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80') center/cover; }
+        .tour-card-embed .tour-placeholder i { font-size: 3rem; margin-bottom: 12px; }
+        .tour-card-embed .tour-placeholder span { font-size: 1.1rem; font-weight: 600; }
+        .tour-card-info { padding: 24px; }
+        .tour-card-info h3 { font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 4px; }
+        .tour-card-info p { color: var(--gray-2); font-size: 0.9rem; }
+        @media (max-width: 768px) { .tours-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown active"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="recorridos-360.html">Recorridos 360°</a></li><li><a href="sistema-constructivo.html">Sistema</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <a href="#">Casas</a> <span>/</span> <span>Recorridos 360°</span></div><h1>Recorridos Virtuales 360°</h1><p>Recorré nuestras casas desde la comodidad de tu sofá</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">EXPERIENCIA INMERSIVA</span>
+            <h2 class="section-title">Explorá cada rincón en 360°</h2>
+            <p class="section-desc">Con nuestros recorridos virtuales podés caminar por cada habitación, ver los materiales y sentir el espacio antes de construir.</p>
+        </div>
+
+        <div class="tours-grid">
+            <div class="tour-card">
+                <div class="tour-card-embed">
+                    <div class="tour-placeholder"><i class="fas fa-vr-cardboard"></i><span>Recorrer Residencia Martínez — Nordelta</span></div>
+                </div>
+                <div class="tour-card-info"><h3>Residencia Martínez</h3><p>Nordelta — 280 m² — Modelo Premium</p></div>
+            </div>
+            <div class="tour-card">
+                <div class="tour-card-embed">
+                    <div class="tour-placeholder"><i class="fas fa-vr-cardboard"></i><span>Recorrer Residencia González — Tigre</span></div>
+                </div>
+                <div class="tour-card-info"><h3>Residencia González</h3><p>Tigre — 320 m² — Modelo Family Plus</p></div>
+            </div>
+            <div class="tour-card">
+                <div class="tour-card-embed">
+                    <div class="tour-placeholder"><i class="fas fa-vr-cardboard"></i><span>Recorrer Residencia Fernández — Pilar</span></div>
+                </div>
+                <div class="tour-card-info"><h3>Residencia Fernández</h3><p>Pilar — 240 m² — Modelo Comfort</p></div>
+            </div>
+            <div class="tour-card">
+                <div class="tour-card-embed">
+                    <div class="tour-placeholder"><i class="fas fa-vr-cardboard"></i><span>Recorrer Residencia López — San Isidro</span></div>
+                </div>
+                <div class="tour-card-info"><h3>Residencia López</h3><p>San Isidro — 350 m² — Modelo Casona</p></div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:48px; padding:32px; background:var(--light); border-radius:var(--radius-lg);">
+            <p style="color:var(--gray-1); font-size:1.05rem;">¿Querés ver los recorridos en realidad virtual? <strong>Contactanos</strong> y te enviamos los links para tu celular con lentes VR.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><div class="footer-logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></div><p>Construcción en Steel Frame</p></div><div class="footer-col"><h4>CONTACTO</h4><ul><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>

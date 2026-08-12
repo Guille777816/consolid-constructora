@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px; }
+        .blog-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .blog-card-img { height: 220px; overflow: hidden; }
+        .blog-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .blog-card:hover .blog-card-img img { transform: scale(1.05); }
+        .blog-card-body { padding: 24px; }
+        .blog-card-tag { display: inline-block; background: rgba(200,132,42,0.1); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; }
+        .blog-card-body h3 { font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 8px; line-height: 1.3; }
+        .blog-card-body h3 a { color: var(--dark); }
+        .blog-card-body h3 a:hover { color: var(--primary); }
+        .blog-card-body p { color: var(--gray-1); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px; }
+        .blog-card-meta { font-size: 0.8rem; color: var(--gray-2); display: flex; gap: 16px; }
+        .blog-card-meta span { display: flex; align-items: center; gap: 4px; }
+        @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown active"><a href="#">NOVEDADES <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="blog.html">Blog</a></li><li><a href="redes-sociales.html">Redes Sociales</a></li><li><a href="revista.html">Revista Online</a></li></ul></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <a href="#">Novedades</a> <span>/</span> <span>Blog</span></div><h1>Blog</h1><p>Noticias, novedades y consejos sobre construcción Steel Frame</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Steel Frame vs tradicional"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Sistema Constructivo</span>
+                    <h3><a href="#">Steel Frame vs construcción tradicional: todo lo que necesitás saber</a></h3>
+                    <p>Comparamos ambos sistemas en tiempo, costo, calidad y sustentabilidad. Descubrí por qué el Steel Frame se está imponiendo en Argentina.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 10 Ago 2025</span><span><i class="far fa-clock"></i> 5 min lectura</span></div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Tendencias en viviendas"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Tendencias</span>
+                    <h3><a href="#">5 tendencias en diseño de viviendas para 2025</a></h3>
+                    <p>Espacios abiertos, materiales naturales, integración indoor-outdoor y más. Las tendencias que definen el diseño residencial este año.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 28 Jul 2025</span><span><i class="far fa-clock"></i> 4 min lectura</span></div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Eficiencia energética"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Eficiencia</span>
+                    <h3><a href="#">Cómo ahorrar un 40% en calefacción con una casa bien aislada</a></h3>
+                    <p>La aislación térmica no es un lujo: es una inversión que se paga sola. Te explicamos cómo logramos casas energéticamente eficientes.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 15 Jul 2025</span><span><i class="far fa-clock"></i> 3 min lectura</span></div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Terminaciones"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Consejos</span>
+                    <h3><a href="#">Guía para elegir pisos: porcelanato vs madera vs vinílico</a></h3>
+                    <p>Analizamos pros, contras, precios y durabilidad de cada opción para que elijas el piso ideal para cada ambiente de tu casa.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 02 Jul 2025</span><span><i class="far fa-clock"></i> 6 min lectura</span></div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="Crédito hipotecario"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Financiación</span>
+                    <h3><a href="#">Crédito hipotecario para construcción: todo lo que debés saber en 2025</a></h3>
+                    <p>Tasas, requisitos, bancos y trámites. Una guía completa para acceder al crédito hipotecario y construir tu casa con financiación.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 18 Jun 2025</span><span><i class="far fa-clock"></i> 7 min lectura</span></div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Piscinas"></div>
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Outdoor</span>
+                    <h3><a href="#">Cómo integrar una piscina en el diseño de tu casa</a></h3>
+                    <p>Tipos de piscinas, materiales, costos y cómo diseñar el espacio outdoor para que sea una extensión natural de tu hogar.</p>
+                    <div class="blog-card-meta"><span><i class="far fa-calendar"></i> 05 Jun 2025</span><span><i class="far fa-clock"></i> 5 min lectura</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><div class="footer-logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></div><p>Construcción en Steel Frame</p></div><div class="footer-col"><h4>CONTACTO</h4><ul><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>

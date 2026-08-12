@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 2px solid var(--gray-4); margin-bottom: 0; }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            background: none;
+            border: none;
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--dark);
+            cursor: pointer;
+            text-align: left;
+            transition: var(--transition);
+        }
+        .faq-question:hover { color: var(--primary); }
+        .faq-question i { color: var(--primary); transition: var(--transition); flex-shrink: 0; margin-left: 16px; }
+        .faq-item.open .faq-question i { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding-bottom: 24px;
+        }
+        .faq-answer p {
+            color: var(--gray-1);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M² — El valor que firmás es el que pagás</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown active"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li><li><a href="politicas-calidad.html">Políticas de Calidad</a></li><li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="sistema-constructivo.html">Sistema Constructivo</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <a href="#">Empresa</a> <span>/</span> <span>Preguntas Frecuentes</span></div><h1>Preguntas Frecuentes</h1><p>Respondemos las dudas más comunes sobre construcción Steel Frame</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">¿Qué es el sistema Steel Frame? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>El Steel Frame es un sistema constructivo en seco que utiliza perfiles de acero galvanizado de alta resistencia como estructura principal. Los paneles se fabrican en planta industrial y se ensamblan en el terreno, lo que permite una construcción más rápida, limpia y con mayor control de calidad que los métodos tradicionales.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cuánto tiempo lleva construir una casa? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Dependiendo del tamaño y complejidad del proyecto, una casa Steel Frame se construye entre 3 y 6 meses. Esto es significativamente más rápido que la construcción tradicional, que puede tomar entre 8 y 14 meses para una vivienda similar.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿El presupuesto que firmo es el precio final? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Sí. En Consolid Constructora trabajamos con presupuesto cerrado. El valor que firmás en el contrato es el que pagás, sin ajustes por inflación ni costos ocultos. Esto te da total tranquilidad desde el primer día.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Qué incluye el servicio llave en mano? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Incluye absolutamente todo: diseño arquitectónico, gestión de permisos municipales, logística de materiales, construcción completa, terminaciones (pisos, revestimientos, grifería, pintura), conexión de servicios básicos y habilitación final. Vos solo te mudás.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿La estructura de acero no se oxida? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>No. Los perfiles de acero utilizados en Steel Frame están galvanizados, es decir, recubiertos con una capa de zinc que los protege contra la corrosión. Esto les da una vida útil de más de 100 años, incluso en ambientes húmedos.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿La casa Steel Frame es resistente al fuego? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Sí. El acero no se incendia ni contribuye a la propagación del fuego. Además, las paredes incluyen placas de yeso ignífugas y aislación con materiales retardantes de llama. El sistema cumple con todas las normativas de seguridad vigentes.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Necesito tener el terreno para pedir presupuesto? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>No es obligatorio, pero sí recomendable. Si ya tenés el terreno, podemos hacer un presupuesto más preciso considerando el suelo, la topografía y las normativas municipales. Si todavía no lo tenés, podemos asesorarte igual y dorientarte en la búsqueda.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Puedo personalizar el diseño de mi casa? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>¡Por supuesto! Todas nuestras casas se diseñan a medida. Podés partir de uno de nuestros modelos base y modificarlo, o crear un diseño completamente nuevo con nuestro equipo de arquitectos. Cada casa es única.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Qué garantía ofrecen? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Ofrecemos garantía estructural extendida sobre la obra. La estructura de acero galvanizado tiene una vida útil superior a los 100 años. Además, todos los materiales y terminaciones cuentan con garantía de fábrica.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Construyen en toda Argentina? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Actualmente operamos en el Gran Buenos Aires, zona norte (Tigre, San Isidro, Pilar, Escobar, Nordelta) y costa atlántica. Para proyectos en otras provincias, consultanos: evaluamos cada caso particular.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo es el proceso de pago? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Trabajamos con un plan de pagos en cuotas durante la obra. El valor se congela al momento de la firma del contrato. Ofrecemos financiación propia y también aceptamos créditos hipotecarios. Consultá por nuestras promociones vigentes.</p></div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:60px; padding:40px; background:var(--light); border-radius:var(--radius-lg);">
+            <h3 style="font-family:var(--font-heading); font-size:1.5rem; margin-bottom:12px;">¿Tenés otra pregunta?</h3>
+            <p style="color:var(--gray-1); margin-bottom:20px;">Escribinos por WhatsApp y te respondemos al instante.</p>
+            <a href="https://wa.me/5491139551358" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><div class="footer-logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></div><p>Construcción en Steel Frame</p></div><div class="footer-col"><h4>EMPRESA</h4><ul><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li><li><a href="politicas-calidad.html">Políticas de Calidad</a></li><li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li></ul></div><div class="footer-col"><h4>SERVICIOS</h4><ul><li><a href="servicios.html">Nuestros Servicios</a></li><li><a href="sistema-constructivo.html">Sistema Constructivo</a></li><li><a href="planos.html">Planos y Diseños</a></li></ul></div><div class="footer-col"><h4>CONTACTO</h4><ul><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></li><li><i class="fas fa-map-marker-alt"></i> Puerto Madero, Buenos Aires</li></ul></div></div><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+    });
+});
+</script>
+</body>
+</html>

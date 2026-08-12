@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimas Entregas | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .deliveries-timeline { max-width: 900px; margin: 0 auto; }
+        .delivery-card { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 48px; align-items: center; }
+        .delivery-card:nth-child(even) { direction: rtl; }
+        .delivery-card:nth-child(even) > * { direction: ltr; }
+        .delivery-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+        .delivery-img img { width: 100%; height: 300px; object-fit: cover; }
+        .delivery-info h3 { font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 8px; }
+        .delivery-info .delivery-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+        .delivery-info .delivery-meta span { font-size: 0.85rem; color: var(--gray-2); display: flex; align-items: center; gap: 4px; }
+        .delivery-info .delivery-meta span i { color: var(--primary); }
+        .delivery-info p { color: var(--gray-1); font-size: 0.95rem; line-height: 1.7; }
+        .delivery-date { display: inline-block; background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 8px; }
+        @media (max-width: 768px) { .delivery-card { grid-template-columns: 1fr; } .delivery-card:nth-child(even) { direction: ltr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown active"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="sistema-constructivo.html">Sistema</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <a href="#">Casas</a> <span>/</span> <span>Últimas Entregas</span></div><h1>Últimas Entregas</h1><p>Los sueños que se hicieron realidad más recientemente</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="deliveries-timeline">
+            <div class="delivery-card">
+                <div class="delivery-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Residencia Martínez"></div>
+                <div class="delivery-info">
+                    <span class="delivery-date">Enero 2025</span>
+                    <h3>Residencia Martínez</h3>
+                    <div class="delivery-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Nordelta</span>
+                        <span><i class="fas fa-ruler-combined"></i> 280 m²</span>
+                        <span><i class="fas fa-bed"></i> 4 dormitorios</span>
+                        <span><i class="fas fa-bath"></i> 3 baños</span>
+                    </div>
+                    <p>Familia de 5 integrantes. Diseño contemporáneo con doble altura en living, piscina y quincho. Entregada en 4 meses y medio.</p>
+                </div>
+            </div>
+
+            <div class="delivery-card">
+                <div class="delivery-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Residencia González"></div>
+                <div class="delivery-info">
+                    <span class="delivery-date">Febrero 2025</span>
+                    <h3>Residencia González</h3>
+                    <div class="delivery-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Tigre</span>
+                        <span><i class="fas fa-ruler-combined"></i> 320 m²</span>
+                        <span><i class="fas fa-bed"></i> 5 dormitorios</span>
+                        <span><i class="fas fa-bath"></i> 3 baños</span>
+                    </div>
+                    <p>Casa familiar con vista al río. Dos plantas, playroom, terraza con parrilla y cocheera doble. Modelo Family Plus personalizado.</p>
+                </div>
+            </div>
+
+            <div class="delivery-card">
+                <div class="delivery-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Residencia Fernández"></div>
+                <div class="delivery-info">
+                    <span class="delivery-date">Marzo 2025</span>
+                    <h3>Residencia Fernández</h3>
+                    <div class="delivery-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Pilar</span>
+                        <span><i class="fas fa-ruler-combined"></i> 240 m²</span>
+                        <span><i class="fas fa-bed"></i> 3 dormitorios</span>
+                        <span><i class="fas fa-bath"></i> 2 baños</span>
+                    </div>
+                    <p>Modelo Premium con terminaciones de lujo. Porcelanato importado, grifería FV y cocina integral con isla. Entregada antes del plazo.</p>
+                </div>
+            </div>
+
+            <div class="delivery-card">
+                <div class="delivery-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Residencia López"></div>
+                <div class="delivery-info">
+                    <span class="delivery-date">Diciembre 2024</span>
+                    <h3>Residencia López</h3>
+                    <div class="delivery-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> San Isidro</span>
+                        <span><i class="fas fa-ruler-combined"></i> 350 m²</span>
+                        <span><i class="fas fa-bed"></i> 4 dormitorios</span>
+                        <span><i class="fas fa-bath"></i> 4 baños</span>
+                    </div>
+                    <p>Modelo Casona con piscina climatizada, SUM y jardín diseñado por paisajista. Nuestra entrega más premium del año.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section"><div class="container"><div class="cta-content"><h2>¿Querés ser nuestro próximo entregado?</h2><p>Contactanos y empezamos a diseñar tu casa hoy.</p><a href="presupuesto.html" class="btn btn-primary btn-lg">Quiero mi Presupuesto</a></div></div></section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><div class="footer-logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></div><p>Construcción en Steel Frame</p></div><div class="footer-col"><h4>CONTACTO</h4><ul><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrios y Ubicaciones | Consolid Constructora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .neighborhoods-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px; }
+        .neighborhood-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .neighborhood-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .neighborhood-card-img { height: 220px; overflow: hidden; position: relative; }
+        .neighborhood-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .neighborhood-card:hover .neighborhood-card-img img { transform: scale(1.05); }
+        .neighborhood-card-badge { position: absolute; top: 12px; right: 12px; background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+        .neighborhood-card-info { padding: 24px; }
+        .neighborhood-card-info h3 { font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 8px; }
+        .neighborhood-card-info p { color: var(--gray-1); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px; }
+        .neighborhood-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+        .neighborhood-stats span { font-size: 0.8rem; color: var(--gray-2); display: flex; align-items: center; gap: 4px; }
+        .neighborhood-stats span i { color: var(--primary); }
+        @media (max-width: 768px) { .neighborhoods-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container top-bar-inner"><span class="top-bar-promo">🔥 CONGELÁ TU VALOR DE M²</span><div class="top-bar-actions"><a href="https://wa.me/5491139551358" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="presupuesto.html" class="btn-presupuesto-small">Presupuesto</a></div></div></div>
+
+<header class="header" id="header"><div class="container header-inner"><a href="../index.html" class="logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></a><nav class="main-nav" id="mainNav"><ul class="nav-list"><li class="nav-item"><a href="../index.html">INICIO</a></li><li class="nav-item has-dropdown"><a href="#">EMPRESA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="donde-construimos.html">Dónde Construimos</a></li></ul></li><li class="nav-item"><a href="servicios.html">SERVICIOS</a></li><li class="nav-item has-dropdown active"><a href="#">CASAS <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="ultimas-entregas.html">Últimas Entregas</a></li><li><a href="testimonios.html">Testimonios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="sistema-constructivo.html">Sistema</a></li><li><a href="barrios.html">Barrios</a></li></ul></li><li class="nav-item"><a href="planos.html">PLANOS</a></li><li class="nav-item has-dropdown"><a href="#">CONTACTO <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="presupuesto.html">Presupuesto</a></li><li><a href="como-llegar.html">Cómo Llegar</a></li></ul></li></ul></nav><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></header>
+
+<section class="page-hero"><div class="container page-hero-content"><div class="breadcrumb"><a href="../index.html">Inicio</a> <span>/</span> <a href="#">Casas</a> <span>/</span> <span>Barrios y Ubicaciones</span></div><h1>Barrios y Ubicaciones</h1><p>Construimos en los mejores barrios residenciales del Gran Buenos Aires</p></div></section>
+
+<section class="page-content">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">DÓNDE CONSTRUIMOS</span>
+            <h2 class="section-title">Nuestras zonas de cobertura</h2>
+            <p class="section-desc">Cada zona tiene su encanto. Te ayudamos a encontrar el lugar perfecto para tu hogar.</p>
+        </div>
+
+        <div class="neighborhoods-grid">
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Nordelta"><span class="neighborhood-card-badge">Premium</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>Nordelta</h3>
+                    <p>El country urbano más exclusivo del norte. Laguna, golf, seguridad 24hs y una comunidad premium. Ideal para familias que buscan el máximo confort.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 85 casas construidas</span><span><i class="fas fa-clock"></i> 15 min de Tigre</span></div>
+                </div>
+            </div>
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="Tigre"><span class="neighborhood-card-badge">Muy popular</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>Tigre y Delta</h3>
+                    <p>Naturaleza, río y tranquilidad a minutos de la ciudad. Barrios privados y countries con vista al delta. Perfecto para quienes buscan calidad de vida.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 120 casas construidas</span><span><i class="fas fa-clock"></i> 45 min de CABA</span></div>
+                </div>
+            </div>
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="Pilar"><span class="neighborhood-card-badge">En crecimiento</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>Pilar</h3>
+                    <p>Amplios terrenos, countries exclusivos y barrios privados en plena expansión. Excelente conectividad con Panamericana y Ruta 8.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 95 casas construidas</span><span><i class="fas fa-clock"></i> 50 min de CABA</span></div>
+                </div>
+            </div>
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80" alt="San Isidro"><span class="neighborhood-card-badge">Clásico</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>San Isidro</h3>
+                    <p>Tradición, elegancia y cercanía a la ciudad. Barrios residenciales con identidad propia, parques y excelente infraestructura urbana.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 65 casas construidas</span><span><i class="fas fa-clock"></i> 25 min de CABA</span></div>
+                </div>
+            </div>
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="Escobar"><span class="neighborhood-card-badge">En expansión</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>Escobar</h3>
+                    <p>En pleno crecimiento inmobiliario. Terrenos amplios con excelente relación calidad-precio. Barrios privados con amenities completos.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 45 casas construidas</span><span><i class="fas fa-clock"></i> 55 min de CABA</span></div>
+                </div>
+            </div>
+            <div class="neighborhood-card">
+                <div class="neighborhood-card-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Costa Atlántica"><span class="neighborhood-card-badge">Verano</span></div>
+                <div class="neighborhood-card-info">
+                    <h3>Costa Atlántica</h3>
+                    <p>Tu casa de fin de semana o permanente en la costa. Construimos en Mar del Plata, Pinamar, Cariló, Villa Gesell y alrededores.</p>
+                    <div class="neighborhood-stats"><span><i class="fas fa-home"></i> 40 casas construidas</span><span><i class="fas fa-clock"></i> 4h de CABA</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:60px; padding:40px; background:var(--light); border-radius:var(--radius-lg);">
+            <h3 style="font-family:var(--font-heading); font-size:1.5rem; margin-bottom:12px;">¿Tu zona no aparece?</h3>
+            <p style="color:var(--gray-1); margin-bottom:20px;">Consultanos. Evaluamos proyectos en todo el Gran Buenos Aires y la costa.</p>
+            <a href="presupuesto.html" class="btn btn-primary">Consultar disponibilidad</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><div class="footer-logo"><div class="logo-icon"><span class="logo-c">C</span></div><div class="logo-text"><span class="logo-name">CONSOLID</span><span class="logo-sub">CONSTRUCTORA</span></div></div><p>Construcción en Steel Frame</p></div><div class="footer-col"><h4>CONTACTO</h4><ul><li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491139551358">(+54) 9 11 3955-1358</a></li><li><i class="fas fa-envelope"></i> <a href="mailto:info@consolidconstructora.com">info@consolidconstructora.com</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Consolid Constructora | Todos los derechos reservados</p></div></div></footer>
+
+<a href="https://wa.me/5491139551358" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">¿Necesitás ayuda?</span></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="../js/main.js"></script>
+</body>
+</html>
